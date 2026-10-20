@@ -1,0 +1,201 @@
+/* Gift Box Component */
+.gift-box-container {
+  margin: 30px auto;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.gift-box-container:active {
+  transform: scale(0.95);
+}
+
+.gift-svg {
+  width: 140px;
+  height: 140px;
+  filter: drop-shadow(0 15px 25px rgba(225, 29, 72, 0.3));
+  animation: gentleFloat 3s ease-in-out infinite;
+}
+
+/* Badges & Headers */
+.pill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: rgba(225, 29, 72, 0.1);
+  color: var(--primary);
+  border: 1px solid rgba(225, 29, 72, 0.2);
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.title-primary {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 6vw, 2.5rem);
+  color: var(--primary);
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+
+.subtitle-cozy {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  max-width: 420px;
+  margin: 0 auto 20px;
+}
+
+/* Glass Card Container */
+.glass-panel {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  border-radius: var(--radius-lg);
+  padding: 24px 20px;
+  backdrop-filter: blur(12px);
+  margin-bottom: 24px;
+}
+
+/* Typewriter Letter */
+.letter-box {
+  background: #fffdfa;
+  border-left: 4px solid var(--primary);
+  padding: 20px 18px;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  font-size: 0.98rem;
+  color: #374151;
+  line-height: 1.8;
+  position: relative;
+}
+
+.letter-text {
+  min-height: 120px;
+  white-space: pre-line;
+}
+
+.cursor-blink {
+  display: inline-block;
+  width: 2px;
+  height: 1.1em;
+  background: var(--primary);
+  margin-left: 2px;
+  vertical-align: text-bottom;
+  animation: blink 0.9s infinite;
+}
+
+.letter-signature {
+  margin-top: 18px;
+  text-align: right;
+  font-family: var(--font-handwriting);
+  font-size: 1.8rem;
+  color: var(--primary);
+}
+
+/* Vouchers Grid & 3D Flip Cards */
+.vouchers-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin: 18px 0;
+}
+
+.voucher-card {
+  perspective: 1000px;
+  min-height: 165px;
+  cursor: pointer;
+}
+
+.voucher-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.voucher-card.flipped .voucher-inner {
+  transform: rotateY(180deg);
+}
+
+.voucher-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: var(--radius-md);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px dashed var(--accent-rose);
+  background: white;
+  box-shadow: var(--card-shadow);
+}
+
+.voucher-face.back {
+  transform: rotateY(180deg);
+  background: linear-gradient(135deg, #fff1f2, #ffe4e6);
+  border: 1px solid var(--primary);
+}
+
+/* Button & Action Elements */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 28px;
+  border-radius: var(--radius-full);
+  border: none;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 8px 20px var(--primary-glow);
+  transition: var(--transition-bounce);
+}
+
+.btn-primary:active {
+  transform: scale(0.96);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--primary);
+  background: white;
+  color: var(--primary);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+/* Toast Message */
+.toast-msg {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: #1f2937;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: var(--radius-full);
+  font-size: 0.9rem;
+  z-index: 999;
+  opacity: 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  pointer-events: none;
+}
+
+.toast-msg.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}

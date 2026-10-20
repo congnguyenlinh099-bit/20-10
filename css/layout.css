@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-gradient);
+  min-height: 100vh;
+  color: var(--text-main);
+  line-height: 1.6;
+  position: relative;
+  overflow-x: hidden;
+}
+
+#particle-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Audio Player Floating Toggle */
+.audio-toggle-btn {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 99;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-full);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--card-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  backdrop-filter: blur(8px);
+}
+
+.audio-toggle-btn:active {
+  transform: scale(0.92);
+}
+
+.audio-toggle-btn.playing {
+  animation: pulseRotate 4s linear infinite;
+  border-color: var(--primary);
+  box-shadow: 0 0 16px var(--primary-glow);
+}
+
+/* Main Container (Optimized for Mobile Viewing) */
+.main-wrapper {
+  max-width: 580px;
+  margin: 0 auto;
+  padding: 24px 18px 80px;
+  position: relative;
+  z-index: 20;
+}
+
+/* Stage 1: Welcome & Unboxing Gate */
+.unboxing-stage {
+  min-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Stage 2: Main Revealed Content */
+.content-stage {
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.content-stage.revealed {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .main-wrapper {
+    padding: 16px 14px 60px;
+  }
+}
