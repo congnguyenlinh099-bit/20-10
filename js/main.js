@@ -60,7 +60,7 @@ export function unboxGift() {
 export function sendHeart(e) {
   heartCount++;
   const countEl = document.getElementById('heart-counter');
-  if (countEl) countEl.innerText = `${heartCount} năng lượng đã gửi`;
+  if (countEl) countEl.innerText = `${heartCount} 💖`;
 
   audioService.playNote(523.25 + heartCount * 20, 0, 0.4, 'sine', 0.1);
 
@@ -73,23 +73,6 @@ export function sendHeart(e) {
 
   document.body.appendChild(heart);
   setTimeout(() => heart.remove(), 2200);
-}
-
-export function copyFeedback() {
-  const msg = "Nhận được quà 20/10 rồi nha kkk! Em mở đủ 4 voucher rồi đó, khi nào về Cà Mau nhớ kèo cầu lông với vài lon nghen 🏸🍻";
-  navigator.clipboard.writeText(msg).then(() => {
-    showToast("Đã copy tin nhắn! Em dán vào Zalo gửi cho anh nhé ✨");
-  }).catch(() => {
-    showToast("Đã ghi nhận! Chúc em ngày 20/10 thật vui nha ✨");
-  });
-}
-
-function showToast(text) {
-  const toast = document.getElementById('toast');
-  if (!toast) return;
-  toast.innerText = text;
-  toast.classList.add('show');
-  setTimeout(() => toast.classList.remove('show'), 3500);
 }
 
 // Global hook for flip sounds
@@ -108,5 +91,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.unboxGift = unboxGift;
   window.sendHeart = sendHeart;
-  window.copyFeedback = copyFeedback;
 });

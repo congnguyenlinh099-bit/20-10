@@ -20,21 +20,21 @@ export const vouchersData = [
   },
   {
     id: 'vc-3',
-    icon: '🎱',
-    tag: 'Kèo Giải Trí',
-    title: 'Voucher Cafe Bida "Tới Đâu Tính Tới Đó"',
-    frontDesc: 'Đúng tinh thần "tới đâu tính tới đó thoai" kkk...',
-    backBenefit: 'Quyền lợi: 1 buổi cafe bida xả stress khi anh về quê, bao vui vẻ thoải mái không quạu!',
-    expiry: 'Tới đâu tính tới đó kkk'
+    icon: '🍜',
+    tag: 'Tour Ăn Vặt SG',
+    title: 'Voucher Dẫn Tour Ăn Uống Sài Gòn',
+    frontDesc: 'Khi nào có dịp lên Sài Gòn chơi...',
+    backBenefit: 'Quyền lợi: Lịnh dẫn đi ăn vặt đặc sản Sài Gòn, bao no bao ngon, không giới hạn số món kkk!',
+    expiry: 'Hạn dùng: Khi nào em ghé SG'
   },
   {
     id: 'vc-4',
-    icon: '😴',
-    tag: 'Đặc Quyền Nghỉ Ngơi',
-    title: 'Voucher Ngủ Nướng Bù Năng Lượng',
-    frontDesc: 'Dành riêng sau những ca làm việc bận rộn cả ngày...',
-    backBenefit: 'Quyền lợi: Tắt hết báo thức, ngủ một giấc thẳng cẳng từ trưa tới chiều tối mà không ai được làm phiền!',
-    expiry: 'Áp dụng vào các ngày off ca'
+    icon: '☕',
+    tag: 'Chill Không Giới Hạn',
+    title: 'Voucher Cafe Ngồi Chill',
+    frontDesc: 'Dành cho những lúc muốn xả stress sau giờ làm...',
+    backBenefit: 'Quyền lợi: 1 buổi cafe thảnh thơi ngồi nói chuyện trời đất, không giới hạn thời gian, không giới hạn chủ đề!',
+    expiry: 'Tới đâu tính tới đó kkk'
   }
 ];
 

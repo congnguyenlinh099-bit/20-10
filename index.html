@@ -79,28 +79,16 @@
         <div id="vouchers-container" class="vouchers-grid"></div>
       </section>
 
-      <!-- Interactive Actions -->
-      <section class="glass-panel" style="text-align: center;">
-        <h3 style="font-size: 1.1rem; color: var(--primary); margin-bottom: 8px;">Nạp Năng Lượng Sau Ca Làm</h3>
-        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px;">
-          Sau ca đứng mỏi chân, bấm tim để xả stress nha kkk
-        </p>
-
-        <div style="display: flex; flex-direction: column; gap: 12px; align-items: center;">
-          <button class="btn-primary" onclick="sendHeart(event)" style="width: 100%; max-width: 320px;">
-            <span>💖 Thả tim nạp năng lượng</span>
-          </button>
-          <div id="heart-counter" style="font-size: 0.85rem; color: var(--primary); font-weight: 600;">
-            0 năng lượng đã gửi
-          </div>
-
-          <button class="btn-secondary" onclick="copyFeedback()" style="width: 100%; max-width: 320px; margin-top: 6px;">
-            <span>💬 Gửi phản hồi về Sài Gòn</span>
-          </button>
+      <!-- Heart Button Only -->
+      <section style="text-align: center; margin: 24px 0;">
+        <button class="btn-primary" onclick="sendHeart(event)" style="max-width: 280px;">
+          <span>💖 Thả tim nạp năng lượng</span>
+        </button>
+        <div id="heart-counter" style="font-size: 0.85rem; color: var(--primary); font-weight: 600; margin-top: 8px;">
         </div>
       </section>
 
-      <footer style="text-align: center; margin-top: 30px; font-size: 0.8rem; color: var(--text-muted);">
+      <footer style="text-align: center; margin-top: 20px; font-size: 0.8rem; color: var(--text-muted);">
         Made with 💖 by Lịnh • 20/10/2026
       </footer>
     </section>
