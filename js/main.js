@@ -5,13 +5,13 @@ import { renderVouchers } from './vouchers.js';
 let heartCount = 0;
 const letterText = `Gửi Tiểu My,
 
-Hôm nay là 20/10, ngày tôn vinh phái đẹp, anh muốn gửi đến em một món quà số đặc biệt được lập trình riêng từ Sài Gòn.
+Hôm nay 20/10, ở shop Đầm Dơi chắc khách đông đứng mỏi nhừ chân rồi ha kkk.
 
-Mấy ngày qua trò chuyện cùng em, anh cảm nhận được một cô gái rất dễ thương: vừa tháo vát, rạng rỡ trong công việc tại Thế Giới Di Động, lại vừa là "công chúa" hiếu thảo bên mâm cơm ấm áp của mẹ.
+Tính gửi lời chúc bình thường mà sợ trôi tin nhắn giống mấy lời chúc văn mẫu, nên anh làm cái trang nho nhỏ này gửi về Đầm Dơi cho em giải trí sau ca làm.
 
-Anh biết những ca đứng làm việc dài rất mỏi chân và tiêu hao nhiều năng lượng. Nhân ngày 20/10, chúc My luôn giữ nụ cười tươi tắn, ngày làm việc thật nhẹ nhàng, và luôn ngập tràn niềm vui cùng gia đình nhé.
+Mấy ngày qua nói chuyện thấy em vui tính, dễ thương mà cũng chịu khó ghê. Chúc My ngày 20/10 lúc nào cũng tươi tắn, nhiều năng lượng, tan ca về nhà thảnh thơi nghỉ ngơi nha.
 
-Và nhớ là... kèo cầu lông so tài cùng "vài lon sương sương" khi anh về Cà Mau vẫn đang chờ em đó nha kkk!`;
+Còn mấy cái kèo hẹn cầu lông với vài lon sương sương thì nhớ giữ lời đó, anh vẫn nhớ hoài kkk!`;
 
 function typeWriter(text, elementId, onComplete) {
   const el = document.getElementById(elementId);
@@ -76,11 +76,11 @@ export function sendHeart(e) {
 }
 
 export function copyFeedback() {
-  const msg = "Cảm ơn anh Lệnh về món quà 20/10 siêu tinh tế nha kkk! Em nhận đủ 4 voucher rồi đó, khi nào về Cà Mau nhớ thực hiện nha 🏸✨";
+  const msg = "Nhận được quà 20/10 rồi nha kkk! Em mở đủ 4 voucher rồi đó, khi nào về Cà Mau nhớ kèo cầu lông với vài lon nghen 🏸🍻";
   navigator.clipboard.writeText(msg).then(() => {
-    showToast("Đã copy tin nhắn! Em dán vào Zalo gửi cho anh nhé ❤️");
+    showToast("Đã copy tin nhắn! Em dán vào Zalo gửi cho anh nhé ✨");
   }).catch(() => {
-    showToast("Đã ghi nhận! Chúc em ngày 20/10 thật tuyệt vời ✨");
+    showToast("Đã ghi nhận! Chúc em ngày 20/10 thật vui nha ✨");
   });
 }
 

@@ -4,15 +4,15 @@ export const vouchersData = [
     id: 'vc-1',
     icon: '🧋',
     tag: 'Tiếp Pin Khẩn Cấp',
-    title: 'Voucher Nạp Năng Lượng Sau Ca Đứng',
+    title: 'Voucher Nạp Pin Sau Ca Đứng',
     frontDesc: 'Dành riêng cho ca làm việc bận rộn tại Thế Giới Di Động...',
-    backBenefit: 'Quyền lợi: 1 ly trà sữa hoặc nước ép full topping gửi tới tận tay khi em đứng mỏi chân hoặc cần sạc pin tinh thần!',
+    backBenefit: 'Quyền lợi: 1 ly trà sữa hoặc nước ép full topping nạp năng lượng ngay khi em thấy đứng mỏi chân hoặc hết pin!',
     expiry: 'Có hiệu lực bất cứ khi nào em cần'
   },
   {
     id: 'vc-2',
     icon: '🏸',
-    tag: 'Kèo Thể Thao Đầm Dơi',
+    tag: 'Kèo Đầm Dơi',
     title: 'Voucher So Tài Cầu Lông & Vài Lon',
     frontDesc: 'Dành riêng cho cô gái từng tập Gym & Cầu lông...',
     backBenefit: 'Quyền lợi: 1 trận so tài cầu lông khi anh về Cà Mau. Ai thua tự giác phạt "vài lon sương sương" theo luật miền Tây kkk!',
@@ -20,21 +20,21 @@ export const vouchersData = [
   },
   {
     id: 'vc-3',
-    icon: '🎧',
-    tag: 'Chuẩn Tinh Tế',
-    title: 'Gói Bảo Hành Lắng Nghe 24/7',
-    frontDesc: 'Cam kết chất lượng từ chàng IT Quận 7...',
-    backBenefit: 'Quyền lợi: Lắng nghe mọi áp lực ca làm, mọi tâm sự mà không phán xét, phản hồi chân thành và luôn đứng về phía em.',
-    expiry: 'Bảo hành vĩnh viễn, 0 đồng phụ phí'
+    icon: '🎱',
+    tag: 'Kèo Giải Trí',
+    title: 'Voucher Cafe Bida "Tới Đâu Tính Tới Đó"',
+    frontDesc: 'Đúng tinh thần "tới đâu tính tới đó thoai" kkk...',
+    backBenefit: 'Quyền lợi: 1 buổi cafe bida xả stress khi anh về quê, bao vui vẻ thoải mái không quạu!',
+    expiry: 'Tới đâu tính tới đó kkk'
   },
   {
     id: 'vc-4',
-    icon: '🍲',
-    tag: 'Bữa Cơm Yêu Thương',
-    title: 'Lời Chúc Đặc Biệt Gửi Mẹ Của My',
-    frontDesc: 'Dành tặng người phụ nữ nấu cơm mỗi ngày cho "công chúa"...',
-    backBenefit: 'Chúc mẹ của My luôn khỏe mạnh, an vui. Cảm ơn mẹ vì đã nuôi dạy một cô con gái vừa hiếu thảo vừa đáng yêu như em!',
-    expiry: 'Gửi trọn vẹn sự trân trọng'
+    icon: '😴',
+    tag: 'Đặc Quyền Nghỉ Ngơi',
+    title: 'Voucher Ngủ Nướng Bù Năng Lượng',
+    frontDesc: 'Dành riêng sau những ca làm việc bận rộn cả ngày...',
+    backBenefit: 'Quyền lợi: Tắt hết báo thức, ngủ một giấc thẳng cẳng từ trưa tới chiều tối mà không ai được làm phiền!',
+    expiry: 'Áp dụng vào các ngày off ca'
   }
 ];
 
